@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Pratyusha Uprety</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/903a3a5f20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo" >Pratyusha <span>Uprety</span></div>
+            <div class="nav-toggle" id="navToggle">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resume-container">
+        <section class="resume-header">
+            <h1 style="color: rgb(255, 255, 255);">Pratyusha Uprety</h1>
+            <p style="color: rgb(255, 255, 255);">Web Developer | Designer | Content Creator</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Experience</h2>
+            <div class="resume-item">
+                <h3>Social Media Manager & Designer</h3>
+                <p><strong>Freelance</strong> | 2024 - Present</p>
+                <ul style="color: black;">
+                    <li>Managed social media campaigns and brand strategies.</li>
+                    <li>Designed engaging graphics and marketing materials.</li>
+                    <li>Created content strategies to boost audience engagement.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <h3>Web Developer</h3>
+                <p><strong>Freelance</strong> | 2024 - Present</p>
+                <ul style="color: black;">
+                    <li>Developed responsive and interactive websites.</li>
+                    <li>Implemented SEO strategies for better visibility.</li>
+                    <li>Integrated backend functionality and database management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor’s in Information Technology</h3>
+                <p>Texas College of Management and IT | 2023 - Present</p>
+            </div>
+            <div class="resume-item">
+                <h3>+2|Science|</h3>
+                <p>Premier College | 2021 - 2023 </p>
+            </div>
+            <div class="resume-item">
+                <h3>SEE</h3>
+                <p>Career Building International Academy| 2020</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pratyusha Uprety</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

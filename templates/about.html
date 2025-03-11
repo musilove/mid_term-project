@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/903a3a5f20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Pratyusha <span>Uprety</span></div>
+            <div class="nav-toggle" id="navToggle">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>My Background</h2>
+        <p>Welcome to my portfolio! I am Pratyusha Uprety, a passionate developer and designer with a deep interest in creating intuitive, engaging user experiences. My background includes education in computer science, and I specialize in web development, graphic design, and content creation.</p>
+
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill">
+                <img src="{{ url_for('static', filename='image/b.jpg') }}" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Proficient in HTML, CSS, JavaScript, React, and Node.js.</p>
+            </div>
+            <div class="skill">
+                <img src="{{ url_for('static', filename='image/c.jpg') }}" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p>Experience with tools like Photoshop, Illustrator, and Figma.</p>
+            </div>
+            <div class="skill">
+                <img src="{{ url_for('static', filename='image/d.jpg') }}" alt="Content Creation">
+                <h3>Content Creation</h3>
+                <p>Skilled in video editing, blog writing, and social media management.</p>
+            </div>
+            <div class="skill">
+                <img src="{{ url_for('static', filename='image/e.jpg') }}"alt="SEO & Digital Marketing">
+                <h3>SEO & Digital Marketing</h3>
+                <p>Experience in SEO strategies, Google Analytics, and social media marketing.</p>
+            </div>
+        </div>
+
+        <h3>Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <h3>Website for Shoopee</h3>
+                <p>A fully responsive e-commerce website developed with HTML, CSS, and Bootstrap for Shoopee, offering a wide range of products including clothing and electronics.</p>
+            </div>
+            <div class="project">
+                <h3>Library Management System</h3>
+                <p>An efficient management system for libraries, built using Java, integrating with MySQL for a seamless experience in managing books, users, and transactions.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pratyusha Uprety</p>
+        <div class="social-icons">
+            <a href="https://github.com/musilove" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pratyusha-uprety-5741252a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sky._bye._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.getElementById("navToggle").addEventListener("click", function() {
+            document.getElementById("navLinks").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
